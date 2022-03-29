@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container
+        {
+            display: flex;
+            flex-direction: row;
+        }
+    </style>
+</head>
+<body>
+    <p id="text">hello guys</p>
+    <h1 id="heading" onclick=colour()>hello</h1>
+    <p class="box">hyy guys</p>
+<h2 id="hello">Hello</h2>
+<div class="container">
+    <!-- <div class="box box1"></div>
+    <div class="box box2"></div>
+    <div class="box box3"></div> -->
+
+</div>
+<button id="btn" onclick=flexdirection()>change flex direction</button>
+    <script>
+        console.log(document.getElementById('text')); //  <p id="text">hello guys</p>
+        console.log(document.getElementById('text').textContent); // hello guys
+
+        console.log(document.getElementsByClassName('box').textContent); //  why??
+
+        //console.log(document.getElementsByTagName('h1'));
+        //console.log(document.getElementsByTagName('h1').innertext="HELLO WORLD"); // hello world
+let x=document.getElementsByTagName('h1');
+let y= (x.style.color=red)
+console.log(y);
+
+function color()
+{
+    document.getElementById('heading').style.color="red";
+}
+    </script>
+</body>
+</html>
